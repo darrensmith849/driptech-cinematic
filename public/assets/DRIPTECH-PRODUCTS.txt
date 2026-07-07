@@ -1,0 +1,6 @@
+DripTech product cards (real cutouts on ocean cards)
+
+prod-tanks.webp ← dt-tanks.webp (on ocean card)
+prod-durasilo.webp ← driptech.co.zw/2022/01/Dura-Silo-Water-Tank-Zimbabwe.png (on ocean card)
+prod-drip.webp ← driptech.co.zw/2026/02/VALUE-DRIP-1-scaled.png (on ocean card)
+prod-agritape.webp ← driptech.co.zw/2026/02/AGRI-TAPE-1-scaled.png (on ocean card)

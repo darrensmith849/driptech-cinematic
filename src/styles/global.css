@@ -131,7 +131,7 @@ header.nav{position:fixed;inset:0 0 auto 0;z-index:100;transition:background .6s
 .cta{position:relative;overflow:hidden;text-align:center;padding:clamp(6rem,14vw,11rem) var(--gut)}
 .cta .cbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .cta::after{content:"";position:absolute;inset:0;background:rgba(11,11,13,.62);z-index:1}
-.cta-inner{position:relative;z-index:2;max-width:22ch;margin:0 auto}
+.cta-inner{position:relative;z-index:2;max-width:min(92vw,40rem);margin:0 auto}
 .cta .d-xl{margin:1.2rem 0 2.2rem}
 .cta .row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 

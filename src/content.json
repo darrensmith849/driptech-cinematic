@@ -59,11 +59,11 @@
             { "name": "Overhead Irrigation", "category": "Irrigation", "price": "Pasture & broadacre", "image": "/assets/w-1.webp", "href": "/products/overhead-irrigation" },
             { "name": "Centre Pivots", "category": "Irrigation", "price": "Large-scale coverage", "image": "/assets/w-2.webp", "href": "/products/centre-pivots" },
             { "name": "Filters & Fittings", "category": "Water", "price": "Silt & debris", "image": "/assets/w-3.webp", "href": "/products/filters" },
-            { "name": "Drip Irrigation", "category": "Irrigation", "price": "Row crops & orchards", "image": "/assets/w-4.webp", "href": "/products/drip-irrigation" },
+            { "name": "Drip Irrigation", "category": "Netafim · Rivulis", "price": "Row crops & orchards", "image": "/assets/prod-drip.webp", "href": "/products/drip-irrigation" },
             { "name": "Pumps", "category": "Water", "price": "Submersible & booster", "image": "/assets/w-5.webp", "href": "/products/pumps" },
             { "name": "Generators", "category": "Power", "price": "Off-grid pumping", "image": "/assets/w-6.webp", "href": "/products/generators" },
             { "name": "Pipes & Fittings", "category": "Water", "price": "PVC & LDPE", "image": "/assets/w-7.webp", "href": "/products/pipes-fittings" },
-            { "name": "Water Tanks", "category": "Water", "price": "1000–5000L HDPE", "image": "/assets/w-8.webp", "href": "/products/water-tanks" },
+            { "name": "Water Tanks", "category": "Jumbo Tanks", "price": "1000–5000L · 12-yr", "image": "/assets/prod-tanks.webp", "href": "/products/water-tanks" },
             { "name": "Boreholes", "category": "Water", "price": "Pumps & controllers", "image": "/assets/w-9.webp", "href": "/products/boreholes" }
           ]
         },
@@ -131,9 +131,9 @@
           "eyebrow": "The range",
           "title": "Nine ranges,<br>one supplier.",
           "items": [
-            { "name": "Water Tanks", "category": "Water", "price": "1000–5000L HDPE", "image": "/assets/w-8.webp", "href": "/products/water-tanks" },
+            { "name": "Water Tanks", "category": "Jumbo Tanks", "price": "1000–5000L · 12-yr", "image": "/assets/prod-tanks.webp", "href": "/products/water-tanks" },
             { "name": "Pumps", "category": "Water", "price": "Submersible & booster", "image": "/assets/w-5.webp", "href": "/products/pumps" },
-            { "name": "Drip Irrigation", "category": "Irrigation", "price": "Row crops & orchards", "image": "/assets/w-4.webp", "href": "/products/drip-irrigation" },
+            { "name": "Drip Irrigation", "category": "Netafim · Rivulis", "price": "Row crops & orchards", "image": "/assets/prod-drip.webp", "href": "/products/drip-irrigation" },
             { "name": "Overhead Irrigation", "category": "Irrigation", "price": "Pasture & broadacre", "image": "/assets/w-1.webp", "href": "/products/overhead-irrigation" },
             { "name": "Centre Pivots", "category": "Irrigation", "price": "Large-scale coverage", "image": "/assets/w-2.webp", "href": "/products/centre-pivots" },
             { "name": "Pipes & Fittings", "category": "Water", "price": "PVC & LDPE", "image": "/assets/w-7.webp", "href": "/products/pipes-fittings" },
@@ -162,19 +162,31 @@
           "type": "pageHeader",
           "eyebrow": "Products — Water",
           "title": "Water Tanks",
-          "intro": "Food-grade, triple-layered HDPE Jumbo tanks in 1000L, 2000L and 5000L — made in Zimbabwe and built to last, with a 12-year warranty.",
+          "intro": "Boasting a 12-year warranty, our Jumbo Tanks are proudly made in Zimbabwe using the leading technology in the world — plus Dura Silo grain storage in the same tough build.",
           "image": "/assets/w-8.webp"
         },
         {
-          "type": "services",
-          "eyebrow": "The detail",
-          "title": "Storage you<br>can rely on.",
-          "items": [
-            { "title": "Sizes", "blurb": "1000L, 2000L and 5000L Jumbo tanks for homes, farms and industry." },
-            { "title": "Build", "blurb": "Triple-layered, food-grade HDPE — UV-stable and made in Zimbabwe." },
-            { "title": "Warranty", "blurb": "Backed by a 12-year warranty for genuine peace of mind." },
-            { "title": "Uses", "blurb": "Municipal backup, rainwater harvesting, borehole storage and irrigation buffering." }
-          ]
+          "type": "featureSplit",
+          "eyebrow": "Jumbo Tanks",
+          "title": "Triple-layered,<br>built to last.",
+          "body": [
+            "The tanks are triple-layered: a white food-grade HDPE inner layer that's hygienic and lets you inspect the interior; a black middle layer that blocks sunlight to prevent algae; and a robust, modern grey outer layer to suit any property.",
+            "Available in 1000L, 2000L and 5000L — for homes, farms and industry."
+          ],
+          "image": "/assets/prod-tanks.webp",
+          "points": ["1000L, 2000L & 5000L", "Triple-layered, food-grade HDPE", "12-year warranty · made in Zimbabwe"]
+        },
+        {
+          "type": "featureSplit",
+          "eyebrow": "Dura Silo",
+          "title": "Grain storage,<br>sealed tight.",
+          "body": [
+            "Dura Silos are robust, high-density storage for any grain. Made of food-grade polyethylene, they keep the contents safe from moisture, pests and theft.",
+            "Available in the same 1000L, 2000L and 5000L sizes as the Jumbo range."
+          ],
+          "image": "/assets/prod-durasilo.webp",
+          "reverse": true,
+          "points": ["Any grain, safely stored", "Moisture, pest & theft protection", "1000L, 2000L & 5000L"]
         },
         {
           "type": "cta",
@@ -196,7 +208,7 @@
           "type": "pageHeader",
           "eyebrow": "Products — Water",
           "title": "Pumps",
-          "intro": "The right pump for every job — submersible, booster, de-watering, mining and firefighting. Italian-engineered DAB and more, sized to your head and flow.",
+          "intro": "The right pump for every job — from ½HP to 40HP. Submersible, booster, de-watering, mining and firefighting, from DAB, Tesla, Morrison and Adelino.",
           "image": "/assets/w-5.webp"
         },
         {
@@ -204,10 +216,10 @@
           "eyebrow": "The detail",
           "title": "Water, at<br>pressure.",
           "items": [
-            { "title": "Submersible & booster", "blurb": "Borehole, pressure and booster pumps for homes, farms and estates." },
-            { "title": "Industrial", "blurb": "De-watering, mining and firefighting pumps for demanding sites." },
-            { "title": "Brands", "blurb": "DAB and other trusted names, with genuine spares on the shelf." },
-            { "title": "Sized to fit", "blurb": "We match the pump to your head, flow and power source." }
+            { "title": "Submersible pumps", "blurb": "½HP to 40HP for lifting, distributing and pressurising water — DAB, Tesla and Morrison." },
+            { "title": "Booster pumps", "blurb": "DAB and Morrison electric boosters from 0.5HP to 20HP, with pressure tanks and switches in stock." },
+            { "title": "De-watering & mining", "blurb": "DAB and Adelino pumps (1HP–15HP) for muddy water, waste and sewage on demanding sites." },
+            { "title": "Backed up", "blurb": "Up to a 2-year warranty on DAB, plus genuine spares and accessories." }
           ]
         },
         {
@@ -230,17 +242,28 @@
           "type": "pageHeader",
           "eyebrow": "Products — Irrigation",
           "title": "Drip Irrigation",
-          "intro": "Precise, low-water drip for row crops and orchards — the DripTech speciality since 1995. Netafim and Rivulis drip lines and tape, designed around your rows.",
+          "intro": "Water delivered directly to the root zone through a network of pipes and emitters — precise, efficient, with minimal evaporation or runoff. The DripTech speciality since 1995.",
           "image": "/assets/w-4.webp"
+        },
+        {
+          "type": "featureSplit",
+          "eyebrow": "Value Drip & Agri Tape",
+          "title": "Every drop,<br>to the root.",
+          "body": [
+            "A full range of dripperline and drip tape — from our own Value Drip and Agri Tape to Netafim and Rivulis — spaced and sized to your crop.",
+            "Ideal for vegetables, tobacco, wheat and other row crops, with the filtration, mainlines and valves to run it."
+          ],
+          "image": "/assets/prod-drip.webp",
+          "points": ["ERA, Netafim & Rivulis", "Straight to the root zone — less waste", "Vegetables, tobacco, wheat & more"]
         },
         {
           "type": "services",
           "eyebrow": "The detail",
-          "title": "Every drop,<br>to the root.",
+          "title": "A system,<br>not just a pipe.",
           "items": [
-            { "title": "Drip lines & tape", "blurb": "Netafim and Rivulis dripperline and drip tape, spaced to your crop." },
-            { "title": "Water-wise", "blurb": "Delivers water straight to the root zone — less waste, better yield." },
-            { "title": "Row crops & orchards", "blurb": "Vegetables, tobacco, citrus, vines and more." },
+            { "title": "Drip lines & tape", "blurb": "Value Drip, Agri Tape, Netafim and Rivulis dripperline and tape." },
+            { "title": "Water-wise", "blurb": "Straight to the root zone — precise, efficient, minimal runoff." },
+            { "title": "Row crops", "blurb": "Vegetables, tobacco, wheat, citrus, vines and more." },
             { "title": "Designed for you", "blurb": "We size the whole system — filtration, mainlines, valves and drip." }
           ]
         },
@@ -264,7 +287,7 @@
           "type": "pageHeader",
           "eyebrow": "Products — Irrigation",
           "title": "Overhead Irrigation",
-          "intro": "Sprinkler and overhead systems for pasture, broadacre and sports fields — even, reliable coverage with K-Rain rotors and sprinklers.",
+          "intro": "Large-aperture nozzles that throw water up to 20 metres — irrigate larger areas for relatively little capital outlay. Permanent or moveable spray lines from Naandanjain, plus a full micro-jet range.",
           "image": "/assets/w-1.webp"
         },
         {
@@ -272,10 +295,10 @@
           "eyebrow": "The detail",
           "title": "Even cover,<br>edge to edge.",
           "items": [
-            { "title": "Sprinklers & rotors", "blurb": "K-Rain and more, for pasture, lawns and sports fields." },
-            { "title": "Broadacre", "blurb": "Move-line and permanent sets for large open lands." },
-            { "title": "Right pressure", "blurb": "Matched to your pump and mainline for even distribution." },
-            { "title": "Built to last", "blurb": "Hard-wearing hardware that stands up to the field." }
+            { "title": "Overhead spray lines", "blurb": "Nozzles that throw up to 20m — permanent or moveable sets, by Naandanjain." },
+            { "title": "Micro-jet", "blurb": "Misters, foggers and micro-jets, plus the Aqua-master seedbed system — Netafim and K-Rain." },
+            { "title": "Big areas, low outlay", "blurb": "Cover more ground for relatively little capital." },
+            { "title": "Sized right", "blurb": "Matched to your pump and mainline for even, reliable distribution." }
           ]
         },
         {
@@ -298,7 +321,7 @@
           "type": "pageHeader",
           "eyebrow": "Products — Irrigation",
           "title": "Centre Pivots",
-          "intro": "Large-scale, even coverage for serious hectares — Reinke centre pivots, designed, supplied and installed by our dedicated Pivots & Projects team.",
+          "intro": "DripTech stocks and installs Reinke pivots — a trusted American brand established in 1954, known for durability and precision irrigation. Fixed and towable options, for serious hectares.",
           "image": "/assets/w-2.webp"
         },
         {
@@ -306,10 +329,10 @@
           "eyebrow": "The detail",
           "title": "Irrigation at<br>full scale.",
           "items": [
-            { "title": "Reinke pivots", "blurb": "Centre-pivot and lateral-move systems for large commercial lands." },
+            { "title": "Reinke", "blurb": "Fixed and towable centre pivots from the American brand established in 1954." },
+            { "title": "Precision & durability", "blurb": "Even application across the full circle, built to last." },
             { "title": "Turnkey", "blurb": "Our Pivots & Projects team handles design, supply and installation." },
-            { "title": "Efficient", "blurb": "Uniform application across the full circle, with low labour." },
-            { "title": "Supported", "blurb": "Spares and technical back-up long after commissioning." }
+            { "title": "Reinke & Otech", "blurb": "With maintenance and servicing support long after commissioning." }
           ]
         },
         {
