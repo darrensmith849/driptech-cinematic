@@ -6,11 +6,11 @@
    slow zoom). Shares nothing with soft/bold/curated/editorial.
 ───────────────────────────────────────────────────────────────────────────── */
 :root{
-  --bg:#0B0B0D;          /* near-black */
-  --bg-2:#131317;        /* panel */
-  --ink:#ECEAE4;         /* off-white */
-  --ink-2:#928D83;       /* muted */
-  --line:rgba(236,234,228,.13);
+  --bg:#0E1A22;          /* deep ocean-charcoal (softened from near-black) */
+  --bg-2:#15242E;        /* panel */
+  --ink:#EFF2F1;         /* off-white */
+  --ink-2:#8A94A0;       /* cool muted */
+  --line:rgba(233,240,240,.14);
   --font:"Switzer",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
   --gut:clamp(20px,4vw,64px);
   --maxw:1440px;

@@ -68,6 +68,12 @@
           ]
         },
         {
+          "type": "statement",
+          "text": "Thirty years. Eleven branches.",
+          "highlight": "Two hundred people.",
+          "marquee": ["Est. 1995", "11 branches", "200+ people", "14 brands", "Everything irrigation"]
+        },
+        {
           "type": "featureSplit",
           "eyebrow": "The company",
           "title": "Thirty years of<br>getting water moving.",
@@ -334,6 +340,16 @@
             { "title": "Turnkey", "blurb": "Our Pivots & Projects team handles design, supply and installation." },
             { "title": "Reinke & Otech", "blurb": "With maintenance and servicing support long after commissioning." }
           ]
+        },
+        {
+          "type": "featureSplit",
+          "eyebrow": "Pivots & Projects",
+          "title": "A dedicated<br>projects team.",
+          "body": [
+            "Centre pivots are handled by our specialist Pivots & Projects division — from design and supply to installation and commissioning on your land."
+          ],
+          "image": "/assets/dt-pivots.webp",
+          "points": ["Design, supply & install", "Reinke & Otech", "Servicing after commissioning"]
         },
         {
           "type": "cta",
