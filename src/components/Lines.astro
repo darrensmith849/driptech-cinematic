@@ -1,0 +1,12 @@
+---
+// Masked line-by-line reveal. Splits an HTML string on <br> and wraps each line in an
+// overflow-hidden mask; the parent (with class "reveal-lines" + data-reveal) animates the
+// lines up, staggered, when it enters the viewport.
+const { html = "" } = Astro.props;
+const lines = String(html).split(/<br\s*\/?>/i).map((l) => l.trim()).filter((l) => l.length);
+---
+<span class="lines">
+  {lines.map((ln, i) => (
+    <span class="ln"><span class="ln-i" style={`transition-delay:${i * 100}ms`} set:html={ln}></span></span>
+  ))}
+</span>

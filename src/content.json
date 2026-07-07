@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "slug": "driptech-cinematic",
+    "noindex": true,
+    "templateVersion": "2.0.0"
+  },
+  "business": {
+    "name": "DripTech",
+    "category": "trades",
+    "tagline": "Irrigation & urban-water systems, designed and supplied across Zimbabwe",
+    "suburb": "Workington",
+    "city": "Harare",
+    "province": "Zimbabwe",
+    "address": "31 Douglas Road, Workington, Harare",
+    "phoneDisplay": "0867 700 7000",
+    "phoneE164": "+2638677007000",
+    "social": {
+      "facebook": "https://www.facebook.com/driptechirrigation/",
+      "instagram": "https://www.instagram.com/driptech_zimbabwe/"
+    }
+  },
+  "brand": {
+    "templateKey": "cinematic",
+    "theme": "dark",
+    "paletteKey": "ocean",
+    "logoMode": "wordmark"
+  },
+  "headerCta": { "label": "Get a quote", "href": "#contact" },
+  "pages": [
+    {
+      "slug": "/",
+      "title": "Home",
+      "nav": "Home",
+      "description": "DripTech — Zimbabwe's end-to-end irrigation and urban-water partner since 1995. Tanks, pumps, drip, centre pivots, pipes, filters, generators and boreholes — designed, supplied, installed and supported across 11 branches.",
+      "sections": [
+        {
+          "type": "hero",
+          "headline": "Every drop,<br>engineered.",
+          "subhead": "For thirty years DripTech has designed, supplied and installed irrigation and urban-water systems across Zimbabwe — from a single drip line to a full centre pivot. One partner for the whole job.",
+          "primaryCta": { "label": "Get a quote", "href": "#contact" },
+          "secondaryCta": { "label": "See the range", "href": "#work" },
+          "image": "/assets/hero.webp",
+          "chips": [
+            { "k": "Since", "v": "1995" },
+            { "k": "Branches", "v": "11 countrywide" }
+          ]
+        },
+        {
+          "type": "statement",
+          "text": "Every drop, where it's needed —",
+          "highlight": "nothing wasted.",
+          "marquee": ["Drip", "Pivots", "Pumps", "Tanks", "Pipes", "Filters", "Generators", "Boreholes"]
+        },
+        {
+          "type": "products",
+          "eyebrow": "The range",
+          "title": "Everything<br>irrigation.",
+          "items": [
+            { "name": "Overhead Irrigation", "category": "Irrigation", "price": "Pasture & broadacre", "image": "/assets/w-1.webp" },
+            { "name": "Centre Pivots", "category": "Irrigation", "price": "Large-scale coverage", "image": "/assets/w-2.webp" },
+            { "name": "Filters & Fittings", "category": "Water", "price": "Silt & debris", "image": "/assets/w-3.webp" },
+            { "name": "Drip Irrigation", "category": "Irrigation", "price": "Row crops & orchards", "image": "/assets/w-4.webp" },
+            { "name": "Pumps", "category": "Water", "price": "Submersible & booster", "image": "/assets/w-5.webp" },
+            { "name": "Generators", "category": "Power", "price": "Off-grid pumping", "image": "/assets/w-6.webp" },
+            { "name": "Pipes & Fittings", "category": "Water", "price": "PVC & LDPE", "image": "/assets/w-7.webp" },
+            { "name": "Water Tanks", "category": "Water", "price": "1000–5000L HDPE", "image": "/assets/w-8.webp" },
+            { "name": "Boreholes", "category": "Water", "price": "Pumps & controllers", "image": "/assets/w-9.webp" }
+          ]
+        },
+        {
+          "type": "featureSplit",
+          "eyebrow": "The company",
+          "title": "Thirty years of<br>getting water moving.",
+          "body": [
+            "DripTech opened in 1995 as a micro-irrigation specialist and grew into a one-stop irrigation and urban-water provider, with a branch network across Zimbabwe.",
+            "We give you an end-to-end solution — advising on design, supplying every part, installing it, and backing it with spares and technical support. We build long-term partnerships, not once-off sales."
+          ],
+          "image": "/assets/feature.webp",
+          "points": [
+            "End-to-end: design, supply, install, support",
+            "11 well-stocked branches countrywide",
+            "Trusted brands: Netafim, K-Rain, DAB, Rivulis"
+          ]
+        },
+        {
+          "type": "services",
+          "eyebrow": "How we work",
+          "title": "From first plan<br>to final spare.",
+          "items": [
+            { "title": "Design & advice", "blurb": "We size and design your system — drip, pivot, overhead or micro-jet — around your crop, soil and water source." },
+            { "title": "Supply", "blurb": "Tanks, pumps, pipes, filters, fittings and generators, well-stocked across eleven branches." },
+            { "title": "Installation", "blurb": "Professional installation of irrigation and pumping systems, done right the first time." },
+            { "title": "Spares & support", "blurb": "Genuine spares and technical back-up long after the sale — the relationship doesn't end at delivery." }
+          ]
+        },
+        {
+          "type": "testimonials",
+          "eyebrow": "Clients",
+          "title": "Trusted since 1995.",
+          "items": [
+            { "quote": "DripTech has been a great blessing to our business. They do not just meet our requirements but go beyond in providing the best possible products, support, pricing and technical assistance.", "name": "Shaun Penny", "role": "" },
+            { "quote": "For the past decade, we have been procuring high quality and durable irrigation pumps and materials from DripTech Irrigation branches across Zimbabwe.", "name": "Danayi Nyamugure", "role": "Scorefield Enterprises" },
+            { "quote": "I have found DAB equipment to be of really good quality and I'm absolutely loving the Netafim plastic sprinklers and spray line.", "name": "Rob Stokes", "role": "ROC Systems" }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Let's get your<br>water moving.",
+          "sub": "Get a system designed, or find your nearest branch.\n0867 700 7000",
+          "primaryCta": { "label": "Get a quote", "href": "#contact" },
+          "secondaryCta": { "label": "Call us", "href": "tel:+2638677007000" },
+          "image": "/assets/cta.webp"
+        },
+        {
+          "type": "contact",
+          "eyebrow": "Contact",
+          "title": "Get a quote.",
+          "intro": "Tell us about your site, crop and water source — we'll design and quote the right system. Prefer to talk? Call 0867 700 7000, or find one of our 11 branches across Zimbabwe."
+        }
+      ]
+    },
+    {
+      "slug": "/branches",
+      "title": "Branches",
+      "nav": "Branches",
+      "description": "DripTech has 11 well-stocked branches across Zimbabwe — Harare, Mutare, Bulawayo and Marondera. Find addresses and phone numbers for your nearest branch.",
+      "sections": [
+        {
+          "type": "pageHeader",
+          "eyebrow": "Countrywide",
+          "title": "Eleven branches.<br>One phone call.",
+          "intro": "Find your nearest DripTech — well-stocked branches from Harare to Bulawayo, Mutare and Marondera. Every branch has its own line and email ([branch]@driptech.co.zw), or call the central number on 0867 700 7000.",
+          "image": "/assets/branches-hero.webp"
+        },
+        {
+          "type": "services",
+          "eyebrow": "Harare & surrounds",
+          "title": "In and around<br>the capital.",
+          "items": [
+            { "title": "Workington", "blurb": "31 Douglas Road, Workington, Harare · 078 270 7189" },
+            { "title": "Harare Drive", "blurb": "Pomona Business Park, Harare Drive, Harare · 0786 597 985" },
+            { "title": "Glenara", "blurb": "308 Samora Machel Ave, Eastlea, Harare · 0772 187 421-2" },
+            { "title": "Avondale (2nd Street)", "blurb": "2 Aberdeen Road, Avondale, Harare · 0772 158 310-1" },
+            { "title": "Msasa", "blurb": "124 Mutare Road, Msasa, Harare · 0780 999 240" },
+            { "title": "Seke Road", "blurb": "12 Seke Road, Hatfield, Harare · 0781 707 159" }
+          ]
+        },
+        {
+          "type": "services",
+          "eyebrow": "Countrywide",
+          "title": "Across<br>Zimbabwe.",
+          "items": [
+            { "title": "Tynwald", "blurb": "16 Tynwald Road, Tynwald, Harare · 0788 363 462" },
+            { "title": "Waterfalls", "blurb": "711 Simon Mazorodze Road, Waterfalls, Harare · 0788 360 718" },
+            { "title": "Mutare", "blurb": "Chimoio Ave, Mutare (off Railway Ave) · 0782 705 570" },
+            { "title": "Bulawayo", "blurb": "21 Doncaster Road, Belmont, Bulawayo · 0774 453 121" },
+            { "title": "Marondera", "blurb": "Ruzawi Road, Marondera · 077 476 3893" }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Prefer to talk?<br>Call us.",
+          "sub": "One central number for all branches.\n0867 700 7000",
+          "primaryCta": { "label": "Call now", "href": "tel:+2638677007000" },
+          "secondaryCta": { "label": "Get a quote", "href": "/#contact" },
+          "image": "/assets/cta.webp"
+        }
+      ]
+    }
+  ]
+}

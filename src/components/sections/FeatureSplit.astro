@@ -1,0 +1,20 @@
+---
+import Lines from "../Lines.astro";
+const { eyebrow, title = "", body = [], points = [], image, images = [], reverse = false } = Astro.props;
+const img = image || images[0];
+---
+<section class="pad wrap">
+  <div class:list={["about", reverse && "rev"]}>
+    <figure class="about-media reveal-media" data-reveal>
+      <div class="p-inner" data-speed="0.12">{img && <img class="skew" src={img} alt={title.replace(/<[^>]+>/g, " ").trim()} />}</div>
+    </figure>
+    <div class="about-body">
+      {eyebrow && <span class="label" data-reveal>{eyebrow}</span>}
+      <h2 class="d-lg reveal-lines" data-reveal style="margin-top:1rem"><Lines html={title} /></h2>
+      <div data-reveal>
+        {body.map((p: string) => <p>{p}</p>)}
+        {points.length > 0 && <ul class="plist">{points.map((pt: string) => <li>{pt}</li>)}</ul>}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+---
+import { sectionId } from "../lib/content";
+import type { SectionT } from "../lib/content-schema";
+import Hero from "./sections/Hero.astro";
+import PageHeader from "./sections/PageHeader.astro";
+import Services from "./sections/Services.astro";
+import Products from "./sections/Products.astro";
+import FeatureSplit from "./sections/FeatureSplit.astro";
+import Statement from "./sections/Statement.astro";
+import Testimonials from "./sections/Testimonials.astro";
+import Cta from "./sections/Cta.astro";
+import Contact from "./sections/Contact.astro";
+
+// Editorial skin renders these section types; others (from the shared schema) are ignored.
+const MAP: Record<string, any> = {
+  hero: Hero, pageHeader: PageHeader, services: Services, products: Products,
+  featureSplit: FeatureSplit, statement: Statement, testimonials: Testimonials, cta: Cta, contact: Contact,
+};
+interface Props { section: SectionT; }
+const { section } = Astro.props;
+const Comp = MAP[section.type];
+const id = sectionId(section as { eyebrow?: string });
+---
+{id && <span id={id} style="display:block;position:relative;top:-70px"></span>}
+{Comp && <Comp {...section} />}

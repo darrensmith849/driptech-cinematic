@@ -1,0 +1,17 @@
+---
+import Lines from "../Lines.astro";
+const { text, highlight, sub, marquee = [] } = Astro.props;
+const html = text + (highlight ? `<br><span class="dim">${highlight}</span>` : "");
+---
+<section class="pad wrap statement">
+  <p class="big reveal-lines" data-reveal><Lines html={html} /></p>
+  {sub && <p class="lead" style="margin-top:2rem" data-reveal>{sub}</p>}
+</section>
+{marquee.length > 0 && (
+  <div class="reel" aria-hidden="true">
+    <div class="reel-track">
+      <span>{marquee.map((m: string) => (<Fragment><b>{m}</b><em>✦</em></Fragment>))}</span>
+      <span>{marquee.map((m: string) => (<Fragment><b>{m}</b><em>✦</em></Fragment>))}</span>
+    </div>
+  </div>
+)}

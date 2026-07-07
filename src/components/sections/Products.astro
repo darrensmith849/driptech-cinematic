@@ -1,0 +1,32 @@
+---
+// Shared "products" section → cinematic WORK gallery. The track scrolls horizontally as you
+// scroll down (pinned); stills skew with scroll velocity and drift with a subtle parallax.
+import Lines from "../Lines.astro";
+const { eyebrow, title = "", items = [] } = Astro.props;
+---
+<section class="work">
+  <div class="wrap work-top">
+    <div class="work-head">
+      <div>
+        {eyebrow && <span class="label" data-reveal>{eyebrow}</span>}
+        <h2 class="d-xl reveal-lines" data-reveal style="margin-top:1rem"><Lines html={title} /></h2>
+      </div>
+      <span class="label" data-reveal>{String(items.length).padStart(2, "0")} — Selected</span>
+    </div>
+  </div>
+  <div class="hscroll">
+    <div class="hscroll-sticky">
+      <div class="hscroll-track">
+        {items.map((it: any, i: number) => (
+          <a class="hs-item" href={it.href ?? "#"}>
+            <div class="hs-media"><div class="p-inner" data-speed="0.06"><img class="skew" src={it.image} alt={it.name} /></div></div>
+            <div class="hs-cap">
+              <span class="wt"><span class="i">{String(i + 1).padStart(2, "0")}</span>{it.name}</span>
+              <span class="wm">{[it.category, it.price].filter(Boolean).join(" — ")}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

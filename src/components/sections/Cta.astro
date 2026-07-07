@@ -1,0 +1,16 @@
+---
+import Lines from "../Lines.astro";
+const { heading, sub, primaryCta, secondaryCta, image } = Astro.props;
+---
+<section class="cta">
+  {image && <img class="cbg" src={image} alt="" />}
+  <div class="cta-inner">
+    <span class="label" data-reveal style="color:rgba(236,234,228,.7)">Next</span>
+    <h2 class="d-xl reveal-lines" data-reveal style="margin:1.2rem 0 2.2rem"><Lines html={heading} /></h2>
+    {sub && <p class="lead" data-reveal style="margin:-1.2rem auto 2.2rem;color:rgba(236,234,228,.8)">{sub}</p>}
+    <div class="row" data-reveal>
+      <a href={primaryCta.href} class="btn" data-magnetic>{primaryCta.label}</a>
+      {secondaryCta && <a href={secondaryCta.href} class="link" style="align-self:center">{secondaryCta.label}</a>}
+    </div>
+  </div>
+</section>

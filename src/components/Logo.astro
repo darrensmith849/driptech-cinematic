@@ -1,0 +1,8 @@
+---
+import { business } from "../lib/content";
+interface Props { class?: string; }
+const { class: cls = "" } = Astro.props;
+---
+<a href="/" class:list={["brand", cls]} aria-label={business.name}>
+  <span class="dot"></span>{business.name}
+</a>

@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionRenderer from "../components/SectionRenderer.astro";
+import { content } from "../lib/content";
+import type { PageT } from "../lib/content-schema";
+
+// Every non-home page, generated from content.pages. Nested slugs (e.g. /ministries/kids)
+// work via the rest param.
+export function getStaticPaths() {
+  return content.pages
+    .filter((p) => p.slug !== "/")
+    .map((p) => ({ params: { slug: p.slug.replace(/^\//, "") }, props: { page: p } }));
+}
+
+interface Props { page: PageT; }
+const { page } = Astro.props;
+---
+<Layout title={page.title} description={page.description}>
+  {page.sections.map((section) => <SectionRenderer section={section} />)}
+</Layout>

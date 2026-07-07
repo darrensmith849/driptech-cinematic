@@ -1,0 +1,38 @@
+---
+import { content, business, anchorNav } from "../lib/content";
+const b = business;
+const nav = anchorNav();
+---
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="/" class="wordmark"><span class="dot"></span>{b.name}</a>
+        <p>{b.tagline}.</p>
+      </div>
+      <div class="foot-col">
+        <span class="label">Index</span>
+        <ul>{nav.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+      </div>
+      <div class="foot-col">
+        <span class="label">Contact</span>
+        <ul>
+          {b.email && <li><a href={`mailto:${b.email}`}>{b.email}</a></li>}
+          {b.phoneDisplay && <li><a href={`tel:${b.phoneE164 ?? b.phoneDisplay}`}>{b.phoneDisplay}</a></li>}
+          {b.address && <li>{b.address}</li>}
+        </ul>
+      </div>
+      <div class="foot-col">
+        <span class="label">Elsewhere</span>
+        <ul>
+          {b.social.instagram && <li><a href={b.social.instagram}>Instagram</a></li>}
+          {b.social.facebook && <li><a href={b.social.facebook}>Vimeo</a></li>}
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>&copy; 2026 {b.name}{content.meta.noindex ? " · Concept preview" : ""}</span>
+      <span>{[b.city, b.province].filter(Boolean).join(" · ")}</span>
+    </div>
+  </div>
+</footer>

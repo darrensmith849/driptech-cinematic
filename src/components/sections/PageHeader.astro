@@ -1,0 +1,11 @@
+---
+const { eyebrow, title, intro, image } = Astro.props;
+---
+<section class="wrap" style="padding-top:clamp(8rem,14vw,10rem)">
+  <div style="max-width:60ch" data-reveal>
+    {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+    <h1 class="h-xl" style="margin-top:18px;font-size:clamp(2.2rem,5vw,3.6rem)" set:html={title}></h1>
+    {intro && <p class="lead" style="margin-top:1.2rem">{intro}</p>}
+  </div>
+  {image && <div class="media" style="margin-top:2.5rem;aspect-ratio:21/9" data-reveal><img src={image} alt={title.replace(/<[^>]+>/g, " ")} /></div>}
+</section>

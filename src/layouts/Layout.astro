@@ -1,0 +1,168 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { content } from "../lib/content";
+
+interface Props { title?: string; description?: string; }
+const b = content.business;
+const pageTitle = Astro.props.title ? `${Astro.props.title} · ${b.name}` : `${b.name} — ${b.tagline}`;
+const description = Astro.props.description ?? `${b.name}${b.suburb ? " in " + b.suburb : ""} — ${b.tagline}.`;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? "https://factory-cinematic.pages.dev");
+const accent = content.brand.accent;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: b.name,
+  description: b.tagline,
+  ...(b.phoneE164 ? { telephone: b.phoneE164 } : {}),
+  ...(b.email ? { email: b.email } : {}),
+  ...(b.address ? { address: { "@type": "PostalAddress", streetAddress: b.address, addressLocality: b.city, addressRegion: b.province, addressCountry: "ZA" } } : {}),
+  sameAs: [b.social.facebook, b.social.instagram].filter(Boolean),
+};
+---
+<!doctype html>
+<html lang="en" class={content.brand.theme === "light" ? "light" : undefined}>
+  <head>
+    <meta charset="UTF-8" />
+    <script is:inline>document.documentElement.classList.add("js");</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {content.meta.noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href={canonical.href} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    {accent && <style is:inline set:html={`:root{--accent:${accent}}`}></style>}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:site_name" content={b.name} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <a href="#main" class="skip">Skip to content</a>
+    <Header />
+    <main id="main"><slot /></main>
+    <Footer />
+    <script>
+      import Lenis from "lenis";
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      // mobile menu — full-screen
+      const burger = document.getElementById("burger");
+      burger?.addEventListener("click", () => {
+        const l = document.querySelector<HTMLElement>(".nav-links");
+        if (!l) return;
+        if (l.style.display === "flex") { l.removeAttribute("style"); document.body.style.overflow = ""; }
+        else {
+          Object.assign(l.style, { display: "flex", position: "fixed", inset: "0", zIndex: "90",
+            flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "30px",
+            background: "var(--bg)", fontSize: "1.4rem" });
+          document.body.style.overflow = "hidden";
+        }
+      });
+      document.querySelectorAll(".nav-links a").forEach((a) => a.addEventListener("click", () => {
+        const l = document.querySelector<HTMLElement>(".nav-links");
+        if (l && l.style.position === "fixed") { l.removeAttribute("style"); document.body.style.overflow = ""; }
+      }));
+
+      // reveal — robust, scroll driven (media clips open, headline lines wipe, text fades)
+      const els = [...document.querySelectorAll("[data-reveal]")] as HTMLElement[];
+      els.forEach((el) => {
+        const p = el.parentElement;
+        const sibs = p ? [...p.querySelectorAll(":scope > [data-reveal]")] : [];
+        el.style.transitionDelay = (sibs.length > 1 ? sibs.indexOf(el) * 90 : 0) + "ms";
+      });
+      const reveal = () => {
+        const vh = window.innerHeight || document.documentElement.clientHeight;
+        for (const el of els) {
+          if (!el.classList.contains("is-visible") && el.getBoundingClientRect().top < vh * 0.9) {
+            el.classList.add("is-visible");
+          }
+        }
+      };
+
+      if (reduce) {
+        els.forEach((el) => el.classList.add("is-visible"));
+      } else {
+        // Lenis momentum scroll (feeds velocity into the motion loop)
+        let velocity = 0;
+        const lenis = new Lenis({ lerp: 0.085, wheelMultiplier: 1.05, touchMultiplier: 1.6 });
+        lenis.on("scroll", (e: any) => { velocity = e.velocity || 0; });
+        const lraf = (t: number) => { lenis.raf(t); requestAnimationFrame(lraf); };
+        requestAnimationFrame(lraf);
+
+        // motion targets
+        const pEls = [...document.querySelectorAll<HTMLElement>("[data-speed]")];
+        const skewEls = [...document.querySelectorAll<HTMLElement>(".skew")];
+        const heroMedia = document.getElementById("heroMedia");
+        const heroPanels = heroMedia ? [...heroMedia.querySelectorAll<HTMLElement>(".hpanel img")] : [];
+        let cursorX = 0;
+        window.addEventListener("mousemove", (e) => { cursorX = (e.clientX / window.innerWidth - 0.5) * 2; }, { passive: true });
+        const hsc = document.querySelector<HTMLElement>(".hscroll");
+        const hTrack = document.querySelector<HTMLElement>(".hscroll-track");
+        let maxX = 0;
+        const measure = () => {
+          if (hsc && hTrack && window.innerWidth > 900) {
+            maxX = Math.max(0, hTrack.scrollWidth - window.innerWidth);
+            hsc.style.height = (maxX + window.innerHeight) + "px";
+          } else if (hsc) { hsc.style.height = ""; maxX = 0; }
+        };
+        measure();
+        window.addEventListener("resize", measure);
+        [200, 600, 1200].forEach((d) => setTimeout(measure, d));
+
+        // single optimized loop: read rects, then write transforms (batched)
+        let curSkew = 0;
+        const tick = () => {
+          const vh = window.innerHeight, y = window.scrollY;
+          const pRects = pEls.map((el) => el.getBoundingClientRect());
+          const hRect = hsc ? hsc.getBoundingClientRect() : null;
+          velocity *= 0.9;
+          const targetSkew = Math.max(-4.5, Math.min(4.5, velocity * 0.32));
+          curSkew += (targetSkew - curSkew) * 0.15;
+          for (let i = 0; i < pEls.length; i++) {
+            const r = pRects[i], speed = parseFloat(pEls[i].dataset.speed || "0.14");
+            const prog = (r.top + r.height / 2 - vh / 2) / vh;
+            pEls[i].style.transform = `translate3d(0,${(prog * speed * -140).toFixed(1)}px,0)`;
+          }
+          if (heroPanels.length) {
+            const p = Math.min(Math.max(y / vh, 0), 1.2);
+            const mid = (heroPanels.length - 1) / 2;
+            for (let i = 0; i < heroPanels.length; i++) {
+              const ty = p * vh * (0.03 + i * 0.012) + cursorX * (i - mid) * 20;
+              heroPanels[i].style.transform = `translate3d(0,${ty.toFixed(1)}px,0) scale(${(1 + p * 0.08).toFixed(3)})`;
+            }
+          }
+          for (const el of skewEls) el.style.transform = `skewY(${curSkew.toFixed(2)}deg)`;
+          if (hsc && hTrack && maxX > 0 && hRect) {
+            const prog = Math.min(Math.max(-hRect.top / maxX, 0), 1);
+            hTrack.style.transform = `translate3d(${(-prog * maxX).toFixed(1)}px,0,0)`;
+          }
+          reveal();
+          requestAnimationFrame(tick);
+        };
+        tick();
+        window.addEventListener("load", () => { measure(); });
+
+        // magnetic elements (fine pointer)
+        if (window.matchMedia("(pointer:fine)").matches) {
+          document.querySelectorAll<HTMLElement>("[data-magnetic]").forEach((el) => {
+            el.addEventListener("mousemove", (e) => {
+              const r = el.getBoundingClientRect();
+              el.style.transform = `translate(${((e.clientX - r.left - r.width / 2) * 0.35).toFixed(1)}px,${((e.clientY - r.top - r.height / 2) * 0.5).toFixed(1)}px)`;
+            });
+            el.addEventListener("mouseleave", () => { el.style.transform = ""; });
+          });
+        }
+      }
+    </script>
+  </body>
+</html>

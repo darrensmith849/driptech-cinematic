@@ -1,0 +1,27 @@
+---
+import Lines from "../Lines.astro";
+const { headline, subhead, primaryCta, secondaryCta, image, chips = [] } = Astro.props;
+const alt = headline.replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
+const N = 5; // vertical film-strip panels
+---
+<section class="hero">
+  {image && (
+    <div class="hero-media reveal-panels" id="heroMedia" data-reveal style={`--n:${N}`}>
+      {Array.from({ length: N }).map((_, i) => (
+        <div class="hpanel"><img src={image} style={`width:${N * 100}%;left:${-i * 100}%`} alt={i === 0 ? alt : ""} /></div>
+      ))}
+    </div>
+  )}
+  <div class="hero-inner">
+    {chips[0] && <span class="label" data-reveal>{chips[0].k}{chips[0].v ? " — " + chips[0].v : ""}</span>}
+    <h1 class="d-hero hero-title reveal-lines" data-reveal><Lines html={headline} /></h1>
+    {subhead && <p class="hero-sub" data-reveal>{subhead}</p>}
+    <div class="hero-foot">
+      <div data-reveal style="display:flex;gap:20px;flex-wrap:wrap;align-items:center">
+        <a href={primaryCta.href} class="btn" data-magnetic>{primaryCta.label}</a>
+        {secondaryCta && <a href={secondaryCta.href} class="link">{secondaryCta.label}</a>}
+      </div>
+      <span class="scrollcue" data-reveal>Scroll</span>
+    </div>
+  </div>
+</section>

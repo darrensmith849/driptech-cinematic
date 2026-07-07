@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionRenderer from "../components/SectionRenderer.astro";
+import { content } from "../lib/content";
+
+// The home page = the page with slug '/'. Its sections are assembled in order.
+const home = content.pages.find((p) => p.slug === "/") ?? content.pages[0]!;
+---
+<Layout description={home.description}>
+  {home.sections.map((section) => <SectionRenderer section={section} />)}
+</Layout>

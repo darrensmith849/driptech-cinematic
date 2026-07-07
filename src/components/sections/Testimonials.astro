@@ -1,0 +1,18 @@
+---
+import Lines from "../Lines.astro";
+const { eyebrow, title, items = [] } = Astro.props;
+---
+<section class="pad wrap">
+  <div class="clients-head">
+    {eyebrow && <span class="label" data-reveal>{eyebrow}</span>}
+    {title && <h2 class="d-lg reveal-lines" data-reveal style="margin-top:1.1rem"><Lines html={title} /></h2>}
+  </div>
+  <div class="press">
+    {items.map((q: any, i: number) => (
+      <blockquote class="press-q" data-reveal>
+        <span class="qn">{String(i + 1).padStart(2, "0")}</span>
+        <div><p>{q.quote}</p><cite>{[q.name, q.role].filter(Boolean).join(" — ")}</cite></div>
+      </blockquote>
+    ))}
+  </div>
+</section>

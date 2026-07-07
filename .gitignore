@@ -1,0 +1,14 @@
+# build output
+dist/
+.astro/
+
+# deps
+node_modules/
+
+# per-build artefacts the worker injects (a fresh copy is written each build)
+# NOTE: src/content.json IS committed as the sample/default site.
+.env
+.env.*
+
+node_modules
+.dev.vars
