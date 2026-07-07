@@ -1,0 +1,14 @@
+DripTech own images (from driptech.co.zw media library)
+
+dt-glenara.webp ← driptech.co.zw/2024/10/glenara-branch-scaled.jpg
+dt-tynwald.webp ← driptech.co.zw/2025/04/tynwald.jpg
+dt-waterfalls.webp ← driptech.co.zw/2025/03/waterfalls.jpg
+dt-marondera.webp ← driptech.co.zw/2025/06/marondera.jpg
+dt-hararedrive.webp ← driptech.co.zw/2024/12/Pomona-Park-imabe.jpg
+dt-2ndstreet.webp ← driptech.co.zw/2023/12/DJI_0580-scaled.jpg
+dt-aerial.webp ← driptech.co.zw/2023/11/DJI_0676-scaled.jpg
+dt-tanks.webp ← driptech.co.zw/2022/01/5000L-Jumbo-Water-Tank-Zimbabwe-new-1.png
+dt-drip.webp ← driptech.co.zw/2026/02/Drip-Irrigation-Zimbabwe-1.png
+dt-logo.webp ← driptech.co.zw/2025/05/DRIPTECH-30-YEAR-ANNIVERSARY-LOGO-OPT-2-3-1.png
+brand-netafim.webp ← driptech.co.zw/2026/02/Netafim-White-2-1-scaled.png
+brand-rivulis.webp ← driptech.co.zw/2026/02/Rivulis-White-1-scaled.png

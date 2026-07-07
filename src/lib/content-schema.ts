@@ -80,6 +80,7 @@ const products = z.object({
   items: z.array(z.object({
     name: z.string(), category: z.string().optional(), price: z.string().optional(),
     rating: z.number().min(0).max(5).default(5), note: z.string().optional(), image: z.string().optional(),
+    href: z.string().optional(),
   })).max(12).default([]),
 });
 // editorial: a big centred statement, one word emphasised in the accent colour

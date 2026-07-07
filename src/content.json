@@ -25,20 +25,20 @@
     "paletteKey": "ocean",
     "logoMode": "wordmark"
   },
-  "headerCta": { "label": "Get a quote", "href": "#contact" },
+  "headerCta": { "label": "Get a quote", "href": "/contact" },
   "pages": [
     {
       "slug": "/",
       "title": "Home",
       "nav": "Home",
-      "description": "DripTech — Zimbabwe's end-to-end irrigation and urban-water partner since 1995. Tanks, pumps, drip, centre pivots, pipes, filters, generators and boreholes — designed, supplied, installed and supported across 11 branches.",
+      "description": "DripTech — Zimbabwe's end-to-end irrigation and urban-water partner since 1995. Tanks, pumps, drip, centre pivots, pipes, filters, generators and boreholes, across 11 branches.",
       "sections": [
         {
           "type": "hero",
           "headline": "Every drop,<br>engineered.",
           "subhead": "For thirty years DripTech has designed, supplied and installed irrigation and urban-water systems across Zimbabwe — from a single drip line to a full centre pivot. One partner for the whole job.",
-          "primaryCta": { "label": "Get a quote", "href": "#contact" },
-          "secondaryCta": { "label": "See the range", "href": "#work" },
+          "primaryCta": { "label": "Get a quote", "href": "/contact" },
+          "secondaryCta": { "label": "See the range", "href": "/products" },
           "image": "/assets/hero.webp",
           "chips": [
             { "k": "Since", "v": "1995" },
@@ -56,15 +56,15 @@
           "eyebrow": "The range",
           "title": "Everything<br>irrigation.",
           "items": [
-            { "name": "Overhead Irrigation", "category": "Irrigation", "price": "Pasture & broadacre", "image": "/assets/w-1.webp" },
-            { "name": "Centre Pivots", "category": "Irrigation", "price": "Large-scale coverage", "image": "/assets/w-2.webp" },
-            { "name": "Filters & Fittings", "category": "Water", "price": "Silt & debris", "image": "/assets/w-3.webp" },
-            { "name": "Drip Irrigation", "category": "Irrigation", "price": "Row crops & orchards", "image": "/assets/w-4.webp" },
-            { "name": "Pumps", "category": "Water", "price": "Submersible & booster", "image": "/assets/w-5.webp" },
-            { "name": "Generators", "category": "Power", "price": "Off-grid pumping", "image": "/assets/w-6.webp" },
-            { "name": "Pipes & Fittings", "category": "Water", "price": "PVC & LDPE", "image": "/assets/w-7.webp" },
-            { "name": "Water Tanks", "category": "Water", "price": "1000–5000L HDPE", "image": "/assets/w-8.webp" },
-            { "name": "Boreholes", "category": "Water", "price": "Pumps & controllers", "image": "/assets/w-9.webp" }
+            { "name": "Overhead Irrigation", "category": "Irrigation", "price": "Pasture & broadacre", "image": "/assets/w-1.webp", "href": "/products/overhead-irrigation" },
+            { "name": "Centre Pivots", "category": "Irrigation", "price": "Large-scale coverage", "image": "/assets/w-2.webp", "href": "/products/centre-pivots" },
+            { "name": "Filters & Fittings", "category": "Water", "price": "Silt & debris", "image": "/assets/w-3.webp", "href": "/products/filters" },
+            { "name": "Drip Irrigation", "category": "Irrigation", "price": "Row crops & orchards", "image": "/assets/w-4.webp", "href": "/products/drip-irrigation" },
+            { "name": "Pumps", "category": "Water", "price": "Submersible & booster", "image": "/assets/w-5.webp", "href": "/products/pumps" },
+            { "name": "Generators", "category": "Power", "price": "Off-grid pumping", "image": "/assets/w-6.webp", "href": "/products/generators" },
+            { "name": "Pipes & Fittings", "category": "Water", "price": "PVC & LDPE", "image": "/assets/w-7.webp", "href": "/products/pipes-fittings" },
+            { "name": "Water Tanks", "category": "Water", "price": "1000–5000L HDPE", "image": "/assets/w-8.webp", "href": "/products/water-tanks" },
+            { "name": "Boreholes", "category": "Water", "price": "Pumps & controllers", "image": "/assets/w-9.webp", "href": "/products/boreholes" }
           ]
         },
         {
@@ -72,14 +72,14 @@
           "eyebrow": "The company",
           "title": "Thirty years of<br>getting water moving.",
           "body": [
-            "DripTech opened in 1995 as a micro-irrigation specialist and grew into a one-stop irrigation and urban-water provider, with a branch network across Zimbabwe.",
-            "We give you an end-to-end solution — advising on design, supplying every part, installing it, and backing it with spares and technical support. We build long-term partnerships, not once-off sales."
+            "DripTech opened in 1995 as a micro-irrigation specialist and grew into a one-stop irrigation and urban-water provider, with eleven well-stocked branches across Zimbabwe.",
+            "We give you an end-to-end solution — advising on design, supplying every part, installing it, and backing it with spares and technical support."
           ],
-          "image": "/assets/feature.webp",
+          "image": "/assets/dt-glenara.webp",
           "points": [
             "End-to-end: design, supply, install, support",
-            "11 well-stocked branches countrywide",
-            "Trusted brands: Netafim, K-Rain, DAB, Rivulis"
+            "11 branches from Harare to Bulawayo",
+            "Netafim, K-Rain, DAB, Rivulis & Reinke"
           ]
         },
         {
@@ -107,15 +107,354 @@
           "type": "cta",
           "heading": "Let's get your<br>water moving.",
           "sub": "Get a system designed, or find your nearest branch.\n0867 700 7000",
-          "primaryCta": { "label": "Get a quote", "href": "#contact" },
-          "secondaryCta": { "label": "Call us", "href": "tel:+2638677007000" },
-          "image": "/assets/cta.webp"
+          "primaryCta": { "label": "Get a quote", "href": "/contact" },
+          "secondaryCta": { "label": "Find a branch", "href": "/branches" },
+          "image": "/assets/dt-aerial.webp"
+        }
+      ]
+    },
+    {
+      "slug": "/products",
+      "title": "Products",
+      "nav": "Products",
+      "description": "DripTech's full range: water tanks, pumps, drip and overhead irrigation, centre pivots, pipes, filters, generators and boreholes — supplied and installed across Zimbabwe.",
+      "sections": [
+        {
+          "type": "pageHeader",
+          "eyebrow": "Products",
+          "title": "Everything irrigation,<br>under one roof.",
+          "intro": "From a single drip line to a full centre pivot — plus the tanks, pumps, pipes and power to run it. Tap any range to see the detail, or ask us to design the whole system around your crop.",
+          "image": "/assets/w-2.webp"
         },
         {
-          "type": "contact",
-          "eyebrow": "Contact",
-          "title": "Get a quote.",
-          "intro": "Tell us about your site, crop and water source — we'll design and quote the right system. Prefer to talk? Call 0867 700 7000, or find one of our 11 branches across Zimbabwe."
+          "type": "products",
+          "eyebrow": "The range",
+          "title": "Nine ranges,<br>one supplier.",
+          "items": [
+            { "name": "Water Tanks", "category": "Water", "price": "1000–5000L HDPE", "image": "/assets/w-8.webp", "href": "/products/water-tanks" },
+            { "name": "Pumps", "category": "Water", "price": "Submersible & booster", "image": "/assets/w-5.webp", "href": "/products/pumps" },
+            { "name": "Drip Irrigation", "category": "Irrigation", "price": "Row crops & orchards", "image": "/assets/w-4.webp", "href": "/products/drip-irrigation" },
+            { "name": "Overhead Irrigation", "category": "Irrigation", "price": "Pasture & broadacre", "image": "/assets/w-1.webp", "href": "/products/overhead-irrigation" },
+            { "name": "Centre Pivots", "category": "Irrigation", "price": "Large-scale coverage", "image": "/assets/w-2.webp", "href": "/products/centre-pivots" },
+            { "name": "Pipes & Fittings", "category": "Water", "price": "PVC & LDPE", "image": "/assets/w-7.webp", "href": "/products/pipes-fittings" },
+            { "name": "Filters & Fittings", "category": "Water", "price": "Silt & debris", "image": "/assets/w-3.webp", "href": "/products/filters" },
+            { "name": "Generators", "category": "Power", "price": "Off-grid pumping", "image": "/assets/w-6.webp", "href": "/products/generators" },
+            { "name": "Boreholes", "category": "Water", "price": "Pumps & controllers", "image": "/assets/w-9.webp", "href": "/products/boreholes" }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Not sure what<br>you need?",
+          "sub": "Tell us your crop, soil and water source — we'll design and quote the right system.\n0867 700 7000",
+          "primaryCta": { "label": "Get a quote", "href": "/contact" },
+          "secondaryCta": { "label": "Call us", "href": "tel:+2638677007000" },
+          "image": "/assets/cta.webp"
+        }
+      ]
+    },
+    {
+      "slug": "/products/water-tanks",
+      "title": "Water Tanks",
+      "nav": false,
+      "description": "DripTech water tanks — 1000L, 2000L and 5000L food-grade, triple-layered HDPE Jumbo tanks, made in Zimbabwe with a 12-year warranty.",
+      "sections": [
+        {
+          "type": "pageHeader",
+          "eyebrow": "Products — Water",
+          "title": "Water Tanks",
+          "intro": "Food-grade, triple-layered HDPE Jumbo tanks in 1000L, 2000L and 5000L — made in Zimbabwe and built to last, with a 12-year warranty.",
+          "image": "/assets/w-8.webp"
+        },
+        {
+          "type": "services",
+          "eyebrow": "The detail",
+          "title": "Storage you<br>can rely on.",
+          "items": [
+            { "title": "Sizes", "blurb": "1000L, 2000L and 5000L Jumbo tanks for homes, farms and industry." },
+            { "title": "Build", "blurb": "Triple-layered, food-grade HDPE — UV-stable and made in Zimbabwe." },
+            { "title": "Warranty", "blurb": "Backed by a 12-year warranty for genuine peace of mind." },
+            { "title": "Uses", "blurb": "Municipal backup, rainwater harvesting, borehole storage and irrigation buffering." }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Need water<br>storage?",
+          "sub": "Find your size and nearest branch.\n0867 700 7000",
+          "primaryCta": { "label": "Get a quote", "href": "/contact" },
+          "secondaryCta": { "label": "All products", "href": "/products" },
+          "image": "/assets/cta.webp"
+        }
+      ]
+    },
+    {
+      "slug": "/products/pumps",
+      "title": "Pumps",
+      "nav": false,
+      "description": "DripTech pumps — submersible, booster, de-watering, mining and firefighting pumps, including DAB, supplied and serviced across Zimbabwe.",
+      "sections": [
+        {
+          "type": "pageHeader",
+          "eyebrow": "Products — Water",
+          "title": "Pumps",
+          "intro": "The right pump for every job — submersible, booster, de-watering, mining and firefighting. Italian-engineered DAB and more, sized to your head and flow.",
+          "image": "/assets/w-5.webp"
+        },
+        {
+          "type": "services",
+          "eyebrow": "The detail",
+          "title": "Water, at<br>pressure.",
+          "items": [
+            { "title": "Submersible & booster", "blurb": "Borehole, pressure and booster pumps for homes, farms and estates." },
+            { "title": "Industrial", "blurb": "De-watering, mining and firefighting pumps for demanding sites." },
+            { "title": "Brands", "blurb": "DAB and other trusted names, with genuine spares on the shelf." },
+            { "title": "Sized to fit", "blurb": "We match the pump to your head, flow and power source." }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Need a pump<br>sized right?",
+          "sub": "Tell us your head, flow and source.\n0867 700 7000",
+          "primaryCta": { "label": "Get a quote", "href": "/contact" },
+          "secondaryCta": { "label": "All products", "href": "/products" },
+          "image": "/assets/cta.webp"
+        }
+      ]
+    },
+    {
+      "slug": "/products/drip-irrigation",
+      "title": "Drip Irrigation",
+      "nav": false,
+      "description": "DripTech drip irrigation — precise, low-water drip lines and tape for row crops and orchards, including Netafim and Rivulis.",
+      "sections": [
+        {
+          "type": "pageHeader",
+          "eyebrow": "Products — Irrigation",
+          "title": "Drip Irrigation",
+          "intro": "Precise, low-water drip for row crops and orchards — the DripTech speciality since 1995. Netafim and Rivulis drip lines and tape, designed around your rows.",
+          "image": "/assets/w-4.webp"
+        },
+        {
+          "type": "services",
+          "eyebrow": "The detail",
+          "title": "Every drop,<br>to the root.",
+          "items": [
+            { "title": "Drip lines & tape", "blurb": "Netafim and Rivulis dripperline and drip tape, spaced to your crop." },
+            { "title": "Water-wise", "blurb": "Delivers water straight to the root zone — less waste, better yield." },
+            { "title": "Row crops & orchards", "blurb": "Vegetables, tobacco, citrus, vines and more." },
+            { "title": "Designed for you", "blurb": "We size the whole system — filtration, mainlines, valves and drip." }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Plan a drip<br>system.",
+          "sub": "Tell us your crop and hectares.\n0867 700 7000",
+          "primaryCta": { "label": "Get a quote", "href": "/contact" },
+          "secondaryCta": { "label": "All products", "href": "/products" },
+          "image": "/assets/cta.webp"
+        }
+      ]
+    },
+    {
+      "slug": "/products/overhead-irrigation",
+      "title": "Overhead Irrigation",
+      "nav": false,
+      "description": "DripTech overhead and sprinkler irrigation for pasture, broadacre and sports fields — including K-Rain.",
+      "sections": [
+        {
+          "type": "pageHeader",
+          "eyebrow": "Products — Irrigation",
+          "title": "Overhead Irrigation",
+          "intro": "Sprinkler and overhead systems for pasture, broadacre and sports fields — even, reliable coverage with K-Rain rotors and sprinklers.",
+          "image": "/assets/w-1.webp"
+        },
+        {
+          "type": "services",
+          "eyebrow": "The detail",
+          "title": "Even cover,<br>edge to edge.",
+          "items": [
+            { "title": "Sprinklers & rotors", "blurb": "K-Rain and more, for pasture, lawns and sports fields." },
+            { "title": "Broadacre", "blurb": "Move-line and permanent sets for large open lands." },
+            { "title": "Right pressure", "blurb": "Matched to your pump and mainline for even distribution." },
+            { "title": "Built to last", "blurb": "Hard-wearing hardware that stands up to the field." }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Cover more<br>ground.",
+          "sub": "Tell us the area and layout.\n0867 700 7000",
+          "primaryCta": { "label": "Get a quote", "href": "/contact" },
+          "secondaryCta": { "label": "All products", "href": "/products" },
+          "image": "/assets/cta.webp"
+        }
+      ]
+    },
+    {
+      "slug": "/products/centre-pivots",
+      "title": "Centre Pivots",
+      "nav": false,
+      "description": "DripTech centre-pivot irrigation — large-scale, even coverage with Reinke pivots, designed, supplied and installed by our Pivots & Projects team.",
+      "sections": [
+        {
+          "type": "pageHeader",
+          "eyebrow": "Products — Irrigation",
+          "title": "Centre Pivots",
+          "intro": "Large-scale, even coverage for serious hectares — Reinke centre pivots, designed, supplied and installed by our dedicated Pivots & Projects team.",
+          "image": "/assets/w-2.webp"
+        },
+        {
+          "type": "services",
+          "eyebrow": "The detail",
+          "title": "Irrigation at<br>full scale.",
+          "items": [
+            { "title": "Reinke pivots", "blurb": "Centre-pivot and lateral-move systems for large commercial lands." },
+            { "title": "Turnkey", "blurb": "Our Pivots & Projects team handles design, supply and installation." },
+            { "title": "Efficient", "blurb": "Uniform application across the full circle, with low labour." },
+            { "title": "Supported", "blurb": "Spares and technical back-up long after commissioning." }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Plan a pivot<br>project.",
+          "sub": "Talk to our Pivots & Projects team.\n0867 700 7000",
+          "primaryCta": { "label": "Get a quote", "href": "/contact" },
+          "secondaryCta": { "label": "All products", "href": "/products" },
+          "image": "/assets/cta.webp"
+        }
+      ]
+    },
+    {
+      "slug": "/products/pipes-fittings",
+      "title": "Pipes & Fittings",
+      "nav": false,
+      "description": "DripTech pipes and fittings — underground PVC, LDPE and every connector to build your irrigation and water reticulation.",
+      "sections": [
+        {
+          "type": "pageHeader",
+          "eyebrow": "Products — Water",
+          "title": "Pipes & Fittings",
+          "intro": "Underground PVC, LDPE and every fitting to connect it — the backbone of any irrigation or water-reticulation system, on the shelf across our branches.",
+          "image": "/assets/w-7.webp"
+        },
+        {
+          "type": "services",
+          "eyebrow": "The detail",
+          "title": "The lines that<br>tie it together.",
+          "items": [
+            { "title": "PVC & LDPE", "blurb": "Underground and surface pipe in the sizes you need." },
+            { "title": "Fittings", "blurb": "Couplers, elbows, valves and connectors — a full range." },
+            { "title": "Reticulation", "blurb": "Mainlines and sub-mains sized to your flow and pressure." },
+            { "title": "In stock", "blurb": "Well-stocked branches, so your job doesn't wait." }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Building a<br>system?",
+          "sub": "Get the pipe and fittings list right.\n0867 700 7000",
+          "primaryCta": { "label": "Get a quote", "href": "/contact" },
+          "secondaryCta": { "label": "All products", "href": "/products" },
+          "image": "/assets/cta.webp"
+        }
+      ]
+    },
+    {
+      "slug": "/products/filters",
+      "title": "Filters & Fittings",
+      "nav": false,
+      "description": "DripTech filtration — screen, disc and sand filters that protect drip and micro-irrigation from silt and debris.",
+      "sections": [
+        {
+          "type": "pageHeader",
+          "eyebrow": "Products — Water",
+          "title": "Filters & Fittings",
+          "intro": "Clean water in, long life out. Screen, disc and sand filtration that protects every drip and micro-irrigation system from silt and debris.",
+          "image": "/assets/w-3.webp"
+        },
+        {
+          "type": "services",
+          "eyebrow": "The detail",
+          "title": "Protect the<br>whole system.",
+          "items": [
+            { "title": "Screen & disc", "blurb": "In-line filters matched to your water quality and flow." },
+            { "title": "Sand & media", "blurb": "For dam, river and borehole water carrying fine silt." },
+            { "title": "Fittings", "blurb": "Everything to plumb the filter bank into your mainline." },
+            { "title": "Longer life", "blurb": "Stops emitters clogging — keeps drip performing for years." }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Keep it<br>clean.",
+          "sub": "Match filtration to your water source.\n0867 700 7000",
+          "primaryCta": { "label": "Get a quote", "href": "/contact" },
+          "secondaryCta": { "label": "All products", "href": "/products" },
+          "image": "/assets/cta.webp"
+        }
+      ]
+    },
+    {
+      "slug": "/products/generators",
+      "title": "Generators",
+      "nav": false,
+      "description": "DripTech generators — reliable power generation to keep pumps and irrigation running off-grid.",
+      "sections": [
+        {
+          "type": "pageHeader",
+          "eyebrow": "Products — Power",
+          "title": "Generators",
+          "intro": "Power where the grid can't reach. Reliable generators to keep your pumps, pivots and irrigation running through outages and out on the land.",
+          "image": "/assets/w-6.webp"
+        },
+        {
+          "type": "services",
+          "eyebrow": "The detail",
+          "title": "Keep the<br>pumps running.",
+          "items": [
+            { "title": "Off-grid pumping", "blurb": "Power for boreholes, pumps and irrigation away from the grid." },
+            { "title": "Backup", "blurb": "Ride through load-shedding and outages without missing a cycle." },
+            { "title": "Sized right", "blurb": "Matched to your pump and system load." },
+            { "title": "Supported", "blurb": "Service and spares from your nearest branch." }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Power your<br>water.",
+          "sub": "Tell us your load and we'll size it.\n0867 700 7000",
+          "primaryCta": { "label": "Get a quote", "href": "/contact" },
+          "secondaryCta": { "label": "All products", "href": "/products" },
+          "image": "/assets/cta.webp"
+        }
+      ]
+    },
+    {
+      "slug": "/products/boreholes",
+      "title": "Boreholes",
+      "nav": false,
+      "description": "DripTech borehole equipment — submersible pumps, pressure tanks and controllers to turn a borehole into reliable water.",
+      "sections": [
+        {
+          "type": "pageHeader",
+          "eyebrow": "Products — Water",
+          "title": "Boreholes",
+          "intro": "Turn a borehole into reliable water. Submersible pumps, pressure tanks and controllers — supplied, installed and supported across Zimbabwe.",
+          "image": "/assets/w-9.webp"
+        },
+        {
+          "type": "services",
+          "eyebrow": "The detail",
+          "title": "From the ground,<br>to the tap.",
+          "items": [
+            { "title": "Submersible pumps", "blurb": "Sized to your borehole depth, yield and demand." },
+            { "title": "Pressure tanks", "blurb": "Steady pressure to the house, farm or field." },
+            { "title": "Controllers", "blurb": "Protection and automation for pump and system." },
+            { "title": "Tanks to match", "blurb": "Pair with a DripTech Jumbo tank for storage and backup." }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Get water from<br>your borehole.",
+          "sub": "Tell us the depth and yield.\n0867 700 7000",
+          "primaryCta": { "label": "Get a quote", "href": "/contact" },
+          "secondaryCta": { "label": "All products", "href": "/products" },
+          "image": "/assets/cta.webp"
         }
       ]
     },
@@ -130,7 +469,20 @@
           "eyebrow": "Countrywide",
           "title": "Eleven branches.<br>One phone call.",
           "intro": "Find your nearest DripTech — well-stocked branches from Harare to Bulawayo, Mutare and Marondera. Every branch has its own line and email ([branch]@driptech.co.zw), or call the central number on 0867 700 7000.",
-          "image": "/assets/branches-hero.webp"
+          "image": "/assets/dt-aerial.webp"
+        },
+        {
+          "type": "products",
+          "eyebrow": "Our branches",
+          "title": "Come and<br>see us.",
+          "items": [
+            { "name": "Glenara", "category": "Harare", "price": "308 Samora Machel Ave", "image": "/assets/dt-glenara.webp" },
+            { "name": "Harare Drive", "category": "Harare", "price": "Pomona Business Park", "image": "/assets/dt-hararedrive.webp" },
+            { "name": "2nd Street", "category": "Avondale, Harare", "price": "2 Aberdeen Road", "image": "/assets/dt-2ndstreet.webp" },
+            { "name": "Tynwald", "category": "Harare", "price": "16 Tynwald Road", "image": "/assets/dt-tynwald.webp" },
+            { "name": "Waterfalls", "category": "Harare", "price": "711 Simon Mazorodze Rd", "image": "/assets/dt-waterfalls.webp" },
+            { "name": "Marondera", "category": "Mashonaland East", "price": "Ruzawi Road", "image": "/assets/dt-marondera.webp" }
+          ]
         },
         {
           "type": "services",
@@ -162,7 +514,103 @@
           "heading": "Prefer to talk?<br>Call us.",
           "sub": "One central number for all branches.\n0867 700 7000",
           "primaryCta": { "label": "Call now", "href": "tel:+2638677007000" },
-          "secondaryCta": { "label": "Get a quote", "href": "/#contact" },
+          "secondaryCta": { "label": "Get a quote", "href": "/contact" },
+          "image": "/assets/cta.webp"
+        }
+      ]
+    },
+    {
+      "slug": "/about",
+      "title": "About",
+      "nav": "About",
+      "description": "DripTech has brought the forefront of irrigation technology to Zimbabwe since 1995 — an end-to-end irrigation and urban-water provider with 11 branches and the trusted brands.",
+      "sections": [
+        {
+          "type": "pageHeader",
+          "eyebrow": "About DripTech",
+          "title": "Thirty years of<br>getting water moving.",
+          "intro": "Since 1995 DripTech has brought the forefront of irrigation technology to Zimbabwe's farmers, mines, estates and homes.",
+          "image": "/assets/dt-aerial.webp"
+        },
+        {
+          "type": "featureSplit",
+          "eyebrow": "Our story",
+          "title": "One partner,<br>the whole system.",
+          "body": [
+            "DripTech opened in 1995 as a micro-irrigation company and grew into a one-stop irrigation and urban-water provider — a network of eleven well-stocked branches across Zimbabwe.",
+            "We give you an end-to-end solution: advising on design, supplying every part, installing it, and offering spares and technical back-up. We believe in building long-term relationships and lifetime partnerships, not once-off sales."
+          ],
+          "image": "/assets/dt-glenara.webp",
+          "points": [
+            "End-to-end: design, supply, install, support",
+            "11 branches from Harare to Bulawayo",
+            "Everything irrigation, urban water and power"
+          ]
+        },
+        {
+          "type": "statement",
+          "text": "Every drop, where it's needed —",
+          "highlight": "nothing wasted.",
+          "marquee": ["Farmers", "Mines", "Estates", "Homes", "Since 1995"]
+        },
+        {
+          "type": "services",
+          "eyebrow": "Brands we carry",
+          "title": "The best in<br>the business.",
+          "items": [
+            { "title": "Netafim", "blurb": "World leaders in drip and micro-irrigation." },
+            { "title": "Rivulis", "blurb": "Precision drip lines and irrigation solutions." },
+            { "title": "K-Rain", "blurb": "Rotors, sprinklers and control for every zone." },
+            { "title": "DAB", "blurb": "Italian-engineered pumps for water at pressure." },
+            { "title": "Reinke", "blurb": "Centre-pivot and lateral-move irrigation systems." },
+            { "title": "ERA & OTECH", "blurb": "Pipes, fittings and irrigation hardware." }
+          ]
+        },
+        {
+          "type": "testimonials",
+          "eyebrow": "Clients",
+          "title": "Trusted since 1995.",
+          "items": [
+            { "quote": "Our company has been using DripTech Glenara ever since it opened near the Thorn Tree. The staff are knowledgeable and helpful.", "name": "Craig Danckwerts", "role": "" },
+            { "quote": "For the past decade, we have been procuring high quality and durable irrigation pumps and materials from DripTech Irrigation branches across Zimbabwe.", "name": "Danayi Nyamugure", "role": "Scorefield Enterprises" },
+            { "quote": "Many thanks to the team for their excellent product support and technical knowledge.", "name": "Tim Moore", "role": "Motor Torque" }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Let's get your<br>water moving.",
+          "sub": "Thirty years of know-how, eleven branches, one call.\n0867 700 7000",
+          "primaryCta": { "label": "Get a quote", "href": "/contact" },
+          "secondaryCta": { "label": "See the range", "href": "/products" },
+          "image": "/assets/dt-aerial.webp"
+        }
+      ]
+    },
+    {
+      "slug": "/contact",
+      "title": "Contact",
+      "nav": "Contact",
+      "description": "Contact DripTech — call 0867 700 7000, or visit one of 11 branches across Zimbabwe. Get an irrigation or urban-water system designed and quoted.",
+      "sections": [
+        {
+          "type": "pageHeader",
+          "eyebrow": "Contact",
+          "title": "Get a quote.",
+          "intro": "Tell us about your site, crop and water source — we'll design and quote the right system. Prefer to talk? Call the central number, or drop into your nearest branch.",
+          "image": "/assets/dt-glenara.webp"
+        },
+        {
+          "type": "contact",
+          "eyebrow": "Reach us",
+          "title": "Let's talk water.",
+          "intro": "Central line: 0867 700 7000. Eleven branches across Zimbabwe, each with its own line and email ([branch]@driptech.co.zw)."
+        },
+        {
+          "type": "cta",
+          "heading": "Find your<br>nearest branch.",
+          "sub": "Eleven branches, from Harare to Bulawayo.\n0867 700 7000",
+          "primaryCta": { "label": "All branches", "href": "/branches" },
+          "secondaryCta": { "label": "Call now", "href": "tel:+2638677007000" },
           "image": "/assets/cta.webp"
         }
       ]
