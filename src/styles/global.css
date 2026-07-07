@@ -62,12 +62,12 @@ header.nav{position:fixed;inset:0 0 auto 0;z-index:100;transition:background .6s
 .burger span{width:24px;height:1.5px;background:var(--ink)}
 
 /* ── HERO — full-screen film still, overlaid content ── */
-.hero{position:relative;height:100svh;min-height:600px;overflow:hidden;display:flex;align-items:flex-end}
+.hero{position:relative;height:100svh;min-height:600px;overflow:hidden;display:flex;align-items:center}
 .hero-media{position:absolute;inset:0;z-index:0;display:flex;overflow:hidden}
 .hpanel{position:relative;height:100%;width:calc(100%/var(--n));overflow:hidden;will-change:transform}
 .hpanel img{position:absolute;top:-17%;max-width:none;height:134%;object-fit:cover;will-change:transform}
 .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,13,.6) 0%,rgba(11,11,13,.12) 20%,rgba(11,11,13,.32) 48%,rgba(11,11,13,.74) 76%,rgba(11,11,13,.93) 100%)}
-.hero-inner{position:relative;z-index:1;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--gut) clamp(3rem,7vw,6rem);text-shadow:0 1px 40px rgba(0,0,0,.5)}
+.hero-inner{position:relative;z-index:1;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--gut);text-shadow:0 1px 40px rgba(0,0,0,.5)}
 .hero-title{max-width:18ch;margin-top:1.4rem}
 .hero-sub{margin-top:1.6rem;color:rgba(236,234,228,.8);max-width:44ch;font-size:clamp(1.02rem,1.3vw,1.2rem)}
 .hero-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-top:clamp(2.4rem,5vw,4rem)}
